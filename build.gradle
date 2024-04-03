@@ -30,7 +30,12 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'io.projectreactor:reactor-test'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.13.0'
 }
+compileJava {
+    options.compilerArgs += ["-parameters"]
+}
+
 def frontendDir = "$projectDir/src/main/frontend"
 
 sourceSets {
