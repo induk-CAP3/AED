@@ -1,19 +1,19 @@
 package com.example.aed.controller;
 
-public class AedData {
+public class EmerData {
     private String buildAddress;
     private String buildPlace;
     private String model;
     private String managerTel;
 
     // 생성자
-    public AedData(String buildAddress, String buildPlace, String model, String managerTel) {
+    public EmerData(String buildAddress, String buildPlace, String model, String managerTel) {
         this.buildAddress = buildAddress;
         this.buildPlace = buildPlace;
         this.model = model;
         this.managerTel = managerTel;
     }
-    public AedData() {
+    public EmerData() {
         // 기본 생성자에서는 아무 작업도 하지 않습니다.
         // 필드를 초기화하지 않고 객체를 생성합니다.
     }
