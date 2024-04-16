@@ -18,7 +18,7 @@ function Aed() {
                 <div key={item.buidAddress}>
                     <p>설치 주소: {item.buildAddress}</p>
                     <p>설치 위치: {item.buildPlace}</p>
-                    <p>설치 모델: {item.Model}</p>
+                    <p>설치 모델: {item.model}</p>
                     <p>관리자 번호: {item.managerTel}</p>
                     <hr />
                 </div>

@@ -32,7 +32,7 @@ public class AedApiController {
                 if (nNode.getNodeType() == Node.ELEMENT_NODE) {
                     Element eElement = (Element) nNode;
                     AedData aedData = new AedData();
-                    aedData.setBuildAddress(getTagValue("BUInpLDADDRESS", eElement));
+                    aedData.setBuildAddress(getTagValue("BUILDADDRESS", eElement));
                     aedData.setBuildPlace(getTagValue("BUILDPLACE", eElement));
                     aedData.setModel(getTagValue("MODEL", eElement));
                     aedData.setManagerTel(getTagValue("MANAGERTEL", eElement));
