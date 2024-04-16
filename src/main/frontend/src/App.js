@@ -12,12 +12,15 @@ function App() {
 
     return (
         <div>
+            <p>응급실</p>
+            <hr />
             {aed.map(item => (
                 <div key={item.buidAddress}>
-                    <p>설치 주소: {item.buildAddress}</p>
-                    <p>설치 위치: {item.buildPlace}</p>
-                    {/*<p>모델명: {item.model}</p>*/}
-                    <p>관리자 번호: {item.managerTel}</p>
+                    <p>응급실 주소: {item.buildAddress}</p>
+                    <p>응급실 이름: {item.enm}</p>
+                    <p>응급실 번호: {item.telNumber}</p>
+                    <p>응급실 운영여부: {item.estate}</p>
+                    <hr />
                 </div>
             ))}
         </div>
