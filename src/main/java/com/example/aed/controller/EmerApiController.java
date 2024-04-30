@@ -1,5 +1,6 @@
 package com.example.aed.controller;
 
+import com.example.aed.domain.EmerData;
 import org.springframework.web.bind.annotation.*;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -35,7 +36,9 @@ public class EmerApiController {
                     emerData.setBuildAddress(getTagValue("DUTYADDR", eElement));
                     emerData.setEnm(getTagValue("DUTYNAME", eElement));
                     emerData.setTelNumber(getTagValue("DUTYTEL3", eElement));
-                    emerData.setEstate(getTagValue("DUTYERYN",eElement));
+                    emerData.setEstate(getTagValue("DUTYERYN", eElement));
+                    emerData.setLatitude(getTagValue("WGS84LAT", eElement));
+                    emerData.setLongitude(getTagValue("WGS84LON", eElement));
                     emerList.add(emerData);
                 }
             }
