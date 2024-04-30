@@ -1,4 +1,4 @@
-package com.example.aed.controller;
+package com.example.aed.domain;
 
 import lombok.Data;
 
@@ -9,5 +9,7 @@ public class EmerData {
     private String model;
     private String telNumber;
     private String estate;
+    private String latitude;
+    private String longitude;
 }
 

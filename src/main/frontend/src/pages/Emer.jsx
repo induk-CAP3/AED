@@ -19,7 +19,9 @@ function Emer() {
                     <p>응급실 주소: {item.buildAddress}</p>
                     <p>응급실 이름: {item.enm}</p>
                     <p>응급실 번호: {item.telNumber}</p>
-                    <p>응급실 운영여부: {item.estate}</p>
+                    {item.estate ? <p>운영중</p> : <p>운영 안함</p> }
+                    <p>경도 : {item.longitude}</p>
+                    <p>위도 : {item.latitude}</p>
                     <hr />
                 </div>
             ))}
