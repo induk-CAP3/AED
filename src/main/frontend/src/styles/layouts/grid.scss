@@ -1,0 +1,50 @@
+
+
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+
+.col {
+    flex: 1;
+    padding: 0 15px;
+}
+
+
+#map-container {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+
+.section {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* 반응형 그리드 조정 */
+@media screen and (max-width: 768px) {
+    .container, .row, .col {
+        width: 100%;
+        padding: 0 10px;
+    }
+}

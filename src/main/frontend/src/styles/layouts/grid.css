@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* grid.scss */
+/* 기본 컨테이너 */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 유연한 그리드 시스템 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col {
+  flex: 1;
+  padding: 0 15px;
+}
+
+/* 지도 컨테이너 그리드 */
+#map-container {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 400px;
+}
+
+/* 섹션 스타일 */
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* 반응형 그리드 조정 */
+@media screen and (max-width: 768px) {
+  .container, .row, .col {
+    width: 100%;
+    padding: 0 10px;
+  }
+}/*# sourceMappingURL=grid.css.map */

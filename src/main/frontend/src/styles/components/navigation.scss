@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #303E4F;
+}
+
+// 모바일 화면 사이즈 햄버거 버튼
+.navbar-toggle {
+    display: none; // 평소에은 숨김
+    @media (max-width: 768px) {
+        display: block; // 모바일에서는 표시
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 1001;
+    }
+}
+
+// 메뉴 리스트 스타일
+.menu {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #303E4F;
+
+    // 직접적인 자식인 메뉴 아이템에 대한 스타일
+    > li {
+        margin: 0 20px;
+        a {
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    // 드롭다운 컨텐츠 스타일
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #666;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+        border-radius: 5px;
+        z-index: 1000;
+
+        li a {
+            display: block;
+            padding: 12px 20px;
+            font-size: 10px;
+            color: white;
+        }
+    }
+
+
+    .dropdown-main:hover .dropdown-content,
+    .dropdown-main:focus-within .dropdown-content {
+        display: block;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+
+        > li {
+            text-align: center;
+            width: 100%;
+            margin: 0;
+        }
+    }
+
+    .menu.active {
+        display: flex;
+    }
+}

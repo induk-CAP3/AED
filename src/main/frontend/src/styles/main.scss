@@ -1,0 +1,29 @@
+// main.scss
+
+@import 'base/base';
+@import 'base/typhograpy';
+@import 'base/reset';
+
+@import 'components/buttons';
+@import 'components/dropdown';
+@import 'components/navigation';
+@import 'components/icons';
+@import 'components/OXButton';
+
+
+@import 'layouts/header';
+@import 'layouts/footer';
+@import 'layouts/grid';
+
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/bee';
+@import 'pages/quiz';
+
+main {
+    padding-top: 100px; // NavBar의 높이에 맞춰 조정 필요
+    color: #000000;
+}
+main h1,h2 {
+    color: #000000;
+}

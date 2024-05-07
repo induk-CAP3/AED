@@ -1,0 +1,95 @@
+/* home.scss */
+body {
+  font-family: "Gothic A1", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #303E4F;
+  color: white;
+  padding: 5px;
+  position: relative;
+  z-index: 10;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0;
+  background-color: #666;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+}
+
+.section {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#introduction {
+  background-color: #36646A;
+  color: white;
+}
+
+#projects {
+  background-color: #C9C9C7;
+  color: white;
+}
+
+#footer {
+  background-color: #303E4F;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  background: #df7366;
+  color: white;
+  padding: 1em 4em;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button:hover {
+  background: #ef8376;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}/*# sourceMappingURL=bee.css.map */

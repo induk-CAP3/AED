@@ -1,0 +1,23 @@
+header {
+    background-color: #303E4F;
+    color: white;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-top: 80px;
+}
+
+.logo {
+    display: block; /* 이미지를 블록 요소로 설정하여 가로 너비를 자동으로 차지하도록 함 */
+    margin: 0 auto; /* 가운데 정렬을 위해 좌우 마진을 자동으로 설정 */
+}

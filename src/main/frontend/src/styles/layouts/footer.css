@@ -1,0 +1,34 @@
+#footer {
+  background-color: #303E4F;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+}
+
+.contact {
+  margin-bottom: 20px;
+}
+
+.contact h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 16px;
+}
+
+.icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.icons li:last-child {
+  margin-right: 0;
+}
+
+.icons a {
+  font-size: 24px;
+}/*# sourceMappingURL=footer.css.map */
