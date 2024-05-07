@@ -29,10 +29,6 @@ public class AedApiController {
         this.aedRepository = aedRepository;
     }
 
-//    @GetMapping("/aed")
-//    public List<AedData> getAedData() {
-//        List<AedData> aedList = new ArrayList<>();
-
     public List<AedEntity> fetchAedAndSave() {
         List<AedEntity> aedEntities = new ArrayList<>();
 
@@ -63,29 +59,16 @@ public class AedApiController {
                     aedEntity.setCol(getTagValue("MFG", eElement));
                     aedEntity.setOrg(getTagValue("ORG", eElement));
                     aedEntities.add(aedEntity);
-                    // 데이터가 1000개 단위로 쌓이면 일괄적으로 데이터베이스에 저장
-
-//                    Optional<AedEntity> existingEntity = aedRepository.findByCol(aedEntity.getCol());
-//                    // 데이터베이스에 존재하지 않는 경우에만 저장
-//                    if (!existingEntity.isPresent()) {
-//                        aedRepository.save(aedEntity);
-//                    }
                 }
             }
+            //1000개단위로 db 저장
             if (aedEntities.size() == 1000) {
                 aedRepository.saveAll(aedEntities);
                 aedEntities.clear();
             }
-
-            // 마지막으로 남은 데이터 저장
-//            if (!aedEntities.isEmpty()) {
-//                aedRepository.saveAll(aedEntities);
-//            }
-//            System.out.println(aedList);
         } catch (Exception e) {
             e.printStackTrace();
         }
-//        System.out.println(aedEntities);
         return aedEntities;
     }
 
@@ -95,5 +78,12 @@ public class AedApiController {
         if (nValue == null)
             return null;
         return nValue.getNodeValue();
+    }
+
+    //aed테이블에서 데이터 받아 aeds에 저장
+    @GetMapping("/aed")
+    public List<AedEntity> getAllAeds() {
+        List<AedEntity> aeds = aedRepository.findAll();
+        return aeds;
     }
 }
