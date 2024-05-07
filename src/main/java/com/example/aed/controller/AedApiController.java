@@ -29,7 +29,7 @@ public class AedApiController {
         this.aedRepository = aedRepository;
     }
 
-    @GetMapping("/aed")
+//    @GetMapping("/aed")
 //    public List<AedData> getAedData() {
 //        List<AedData> aedList = new ArrayList<>();
 
